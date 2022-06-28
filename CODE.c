@@ -75,7 +75,7 @@ int main() {
         
         scanf("%d",&p.bloodtype);
        
-        printf("Please go to counter number %d\n",p.bloodtype);
+        printf("Please go to counter number %d for treatment.\n",p.bloodtype);
        
         printf("HOPE YOU GET WELL SOON 😊");}
 
