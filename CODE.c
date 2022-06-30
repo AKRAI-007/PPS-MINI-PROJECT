@@ -53,7 +53,11 @@ int main() {
        
         printf("Please go to counter number %d\n",donor.bloodtype);
        
-        printf("THANK YOU FOR DONATING BLOOD ADN SAVING A LIFE 😊");}
+        
+        FILE *p;
+        p=fopen("donor.txt","a");
+        fprintf(p,"%d %s %d",donor.age,donor.name,donor.bloodtype);
+        fclose(p);}
     
     else {printf("NOT ELIGiBLE");}}
    
@@ -77,7 +81,12 @@ int main() {
        
         printf("Please go to counter number %d for treatment.\n",p.bloodtype);
        
-        printf("HOPE YOU GET WELL SOON 😊");}
+  
+        FILE *fp;
+        fp=fopen("need.txt","a");
+        fprintf(fp,"%d ||%s || %s || %d",p.age,p.name,p.disease,p.bloodtype);
+        fclose(fp);}
+    
 
     return 0;
 }
